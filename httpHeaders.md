@@ -195,3 +195,12 @@ Authorization: ApiKey sk_live_abc123xyz789`
 
 6. Document your headers:
    - Document all expected request and response headers in your API documentation, and include example values and descriptions.
+
+### Common mistakes to avoid
+
+1. Sending excessive headers: large headers slow down communication
+2. Ignoring security headers: Omitting headers like Strict-Transport-Security or Content-Security-Policy exposes vulnerabilities.
+3. Improper CORS configuration: Avoid overly permissive origins.
+4. Exposing server information: Limit or remove the Server header in production.
+5. Not validating header values: Sanitize input to prevent injection attacks.
+6. Misconfiguring cache headers: Avoid caching sensitive data.
