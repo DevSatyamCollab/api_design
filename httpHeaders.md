@@ -175,3 +175,23 @@ Authorization: ApiKey sk_live_abc123xyz789`
    - The Strict-Transport-Security (HSTS) header tells browsers to only access the site using HTTPS, enhancing security by preventing downgrade attacks.
 
    Eg: `Strict-Transport-Security: max-age=31536000; includeSubDomains`
+
+### Best practices for using HTTP headers
+
+1. Keep headers concise:
+   - Avoid unnecessary or redundant headers to reduce the size of both request / responses.
+
+2. Leverage caching headers:
+   - Use caching headers to reduce load on the server and imporve response time.
+
+3. Prioritize Security:
+   - Never include sensitive data such as passwords or API keys in plain-text headers. Always use HTTPS to encrypt header data in transit.
+
+4. Safely handle Cross-Origin Resource Sharing (CORS):
+   - Configure CORS carefully to prevent unauthorized access. Avoid using Access-Control-Allow-Origin: \* for authenticated endpoints.
+
+5. Use appropriate compression:
+   - Enable compression through the Accept-Encoding and Content-Encoding headers to reduce bandwidth usage.
+
+6. Document your headers:
+   - Document all expected request and response headers in your API documentation, and include example values and descriptions.
