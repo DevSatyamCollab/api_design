@@ -13,3 +13,46 @@
 
 Typically, repeatedly entering a username and password for API usage can be cumbersome.
 API cookies simplify this process, allowing users to reuse their credentials conveniently.
+
+### Advantage
+
+1. Simplification of authentication process
+2. No need for client to remember authentication info
+3. Ease of session management
+
+Operate by managing authentication tokens on the user side and client-server implementaion
+
+### Disadvantage
+
+1. Security risk
+2. Potential for cookie theft
+3. Server side burden for managing cookies
+
+If cookie got stolen, unauthorized access becomes possible
+
+### Differences between API cookies and HTTP cookies
+
+1. Purpose:API cookies are used for API authentication, while HTTP cookies identify users on websites.
+2. Issuer:API cookies are issued by API servers, while HTTP cookies are issued by web servers.
+3. Expiration:API cookies often have session-based expiration, while HTTP cookies can have longer-term expiration.
+4. Security Measures:API cookies frequently use secret keys or tokens for added security, while HTTP cookies are often stored on the client side in plain text.
+5. Management Entity:API cookies are primarily managed on the server side, while HTTP cookies can be partly managed on the client side.
+
+### Different Types of Cookies
+
+Cookies come in various forms, each serving a unique purpose and having a distinct lifespan. However, these categories aren't set in stone, and a single cookie can sometimes belong to multiple types.
+
+1. Session Cookies: Temporary Guests
+   - These cookies are like houseguests who only stay for the evening. They're stored temporarily for the duration of your browsing session and are shown the door as soon as you close your web browser.
+
+2. Persistent Cookies: Long-term Residents
+   - Unlike their fleeting counterparts, persistent cookies are more like long-term tenants. They're given a predetermined lease agreement, allowing them to stick around on your device even after you've closed the browser. Their stay can range from a few minutes to several months, depending on their expiration date.
+
+3. Tracking Cookies: Digital Private Eyes
+   - Think of these cookies as private investigators hired by tracking services. They discreetly observe and record your online behavior across multiple websites. When you revisit a site, these cookies report back to their employer with a detailed log of your activities.
+
+4. Authentication Cookies: Digital Doormen
+   - These cookies act as virtual doormen, identifying users and ensuring that only the right person is allowed to access sensitive information. They play a crucial role in maintaining the security of user sessions.
+
+5. First-Party and Third-Party Cookies: Insiders and Outsiders
+   - First-party cookies are like trusted members of the household – they originate from the same domain as the website you're visiting. Third-party cookies, on the other hand, are like distant relatives or strangers, set by domains other than the one you're currently on, often for tracking and advertising purposes.
