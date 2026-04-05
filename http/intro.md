@@ -1,24 +1,20 @@
 ## What are APIs ?
 
-- API stands for: Application Programming Interfaces, provide a manner in which they communicate to each other.
-
+- API stands for: Application Programming Interfaces
 - It abstracts the complexity of the software Application.
-
 - They define methods and data formats of an application should use in order to perform task. (CRUD)
 
 ## HTTP in API design
 
 - HTTP is the fundamental piece of of an API design.
-
-- HTTP is curcial for API design as it provides the structure of request and response should be constructed and handled.
-
+- As it provides the structure of request and response should be constructed and handled.
 - A solid Understanding of HTTP principles allows for more robust, efficient and secure API design.
 
 ## HTTP Versions
 
 - HTTP Versions specify how data should be packaged and transported, as well as how web servers and browsers should responed to commands.
 
-- From HTTP/1.0, the initial version of HTTP to HTTP/2 and the latest version HTTP/3, each version brings in improvements in speed, data transmission capabilities, and security.
+- There are many versions, each version brings in improvements in speed, data transmission capabilities, and security.
 
 ## HTTP: 1.0 VS 2.0 VS 3.0
 
@@ -26,8 +22,12 @@
 
 - Networks typically consider the OSI models. These model contemplate different layers like network, transport and application layer.
 
-- Each network layer has particular protocols that implement a myriad(countless) functionalities. Eg: IP at the network layer, TCP and UDP at transport layer and HTTP at application layer.
-
+- Each network layer has particular protocols that implement a myriad(countless) functionalities. 
+```
+IP at the network layer
+TCP and UDP at transport layer
+HTTP at application layer
+```
 - These protocols evolve, thus being updated and extended over a peroid of time. So, it's a natural that these protocols have mulitple Versions.
 
 ### Application Layer Protocols
@@ -47,8 +47,6 @@
 
 ### HTTP
 
-- HTTP is an application protocol (7th layer of OSI model and 4th layer of TCP/IP model) employed to create distrubted hypermedia systems.
-
 - HTTP relies on TCP/IP to work. IT means the HTTP is a connection based protocols.
 
 - HTTP has been used on the internet since '90s'. The first release of HTTP (0.g) was much limited. This version only enable client to request information from a server using a single operation. GET
@@ -63,15 +61,15 @@ In this context, version 1.0 of HTTP was released 1996 about five years after ve
 
 Version 1.0 of HTTP brings several new utilities. Let’s see some of them:
 
-1. Header: only the method and the resource name composed an HTTP 0.9 request. HTTP 1.0, in turn, introduced the HTTP header, thus allowing the transmission of metadata that made the protocol flexible and extensible
+1. Header: HTTP header allowing the transmission of metadata that made the protocol flexible and extensible
 
-2. Versioning: the HTTP requests explicitly informs the employed version, appending it in the request line
+2. Versioning: The HTTP requests explicitly informs the employed version, appending it in the request line
 
 3. Status code: HTTP responses now contain a status code, thus enabling the receiver to check the request processing status (successful or failed)
 
-4. Content-type: thanks to the HTTP header, in specific to the Content-Type field, HTTP can transmit other documents types than a plain HTML file
+4. Content-type: Thanks to the HTTP header, in specific to the Content-Type field, HTTP can transmit other documents types than a plain HTML file
 
-5. New methods: besides GET, HTTP 1.0 provides two new methods (POST and HEAD)
+5. New methods: Besides GET, HTTP 1.0 provides two new methods (POST and HEAD)
 
 - In summary, HTTP Version 1.0 is more robust than 0.g.
 
@@ -133,4 +131,4 @@ This version implement several features to improve connection and data exchange.
 
 - QUIC, in short, is a transport layer protocol with native multiplexing and built-in encryption.
 
-- HTTP 3.0 is that it always creates encrypted connections.
+- HTTP 3.0 is that, it always creates encrypted connections.
